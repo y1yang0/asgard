@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<script src="{{ site.baseurl }}/assets/scripts/copybutton.js" async></script>
+
+<article class="container-post">
+  <div class="post-title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="post-content">
+    {% include anchor_headings.html html=content anchorBody="#" anchorClass="octicon" %}
+  </div>
+  <!-- <div class="post-info">
+    Tags:
+    {% for tag in page.categories %}
+    <a href="/tags/{{ tag }}"><span class="tag">#{{ tag }}</span></a>
+    {% endfor %}
+    Date: <span class="tag">{{ page.date | date: '%Y-%m-%d'}}</span>
+  </div> -->
+  <hr/>
+  <script src="https://utteranc.es/client.js"
+  repo="y1yang0/asgard"
+  issue-term="pathname"
+  label="blog-comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+</article>
