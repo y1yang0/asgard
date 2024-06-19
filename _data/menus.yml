@@ -1,0 +1,8 @@
+- default: menu_index
+  url:   ""
+
+- title: "Tags"
+  url:   "tags"
+
+- default: menu_about
+  url:   "about"

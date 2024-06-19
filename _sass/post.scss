@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.post-title {
+  text-align: center;
+}
+
+.post-content {
+  // scrollable for mobile devices
+  overflow-x: scroll;
+}
+
+.post-content p {
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.post-content a {
+  font-weight: lighter;
+}
+
+
+.post-content a:hover {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
+
+.post-content img {
+  display: block;
+  margin: 10px auto;
+}
+
+.post-content ol {
+  padding: 5px;
+  line-height: 22px;
+}
+
+.post-content ul {
+  padding: 5px;
+  line-height: 22px;
+}
+
+.post-info {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: xx-small;
+}
+
+.post-category,
+.post-tag {
+  margin: 0 5px;
+}
+
+// Copy button for code blocks
+pre.highlight > button {
+  opacity: 0;
+}
+
+pre.highlight:hover > button {
+  opacity: 1;
+}
+
+pre.highlight > button:active,
+pre.highlight > button:focus {
+  opacity: 1;
+}
+
+.copyButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+// Anchors for headings
+h1 .octicon, h2 .octicon, h3 .octicon, h4 .octicon, h5 .octicon, h6 .octicon  {
+  visibility: hidden;
+}
+
+h1:hover .octicon, h2:hover .octicon, h3:hover .octicon, h4:hover .octicon, h5:hover .octicon, h6:hover .octicon {
+  visibility: visible;
+}
+
+// Tags
+.tag {
+  display: inline-block;
+  padding: .2em .5em .3em;
+  background: #222020;
+  color: white;
+  font-weight: 600;
+  margin: .25em .1em;
+  border-radius: 4px;
+}
+
+// Diff text
+.diffa {
+  width:49%;
+  float:left;
+  display:inline;
+}
+
+.diffb {
+  width:49%;
+  float:right;
+  display:inline;
+}
